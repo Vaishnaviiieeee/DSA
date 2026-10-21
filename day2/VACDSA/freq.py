@@ -68,9 +68,8 @@
 # print (get_max (3,12,32,9,21)) 
 # print (get_max ('Arush','Payal','Zalina','Yogesh'))       
 
-N1 = int(input("Enter number:"))
-N2 = int(input("Enter number:"))
+Side = int(input("Enter side of square:"))
 
-SUM = (N1+N2)
+Area = (Side*Side)
 
-print("Sum of number is :", SUM)
+print ("Area of a square is:", Area)
