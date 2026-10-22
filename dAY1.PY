@@ -50,7 +50,7 @@ list1 = [1, 4, 2, 8, 5]
 # list1.insert(3,7)
 # print(list1)
 
-print(list1.append(9))
+# print(list1.append(9))
 list1 = [1, 4, 2, 8, 5]
 
 # list1.append(9)
@@ -68,5 +68,11 @@ list1 = [1, 4, 2, 8, 5]
 # list1.insert(3,7)
 # print(list1)
 # print(list.append(9))
-print(list.reverse)
+# print(list.reverse)
+# print(list1)
+
+# print(list1.remove(4))
+# print(list1)
+
+print(list1.pop(3))
 print(list1)
