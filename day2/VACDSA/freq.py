@@ -68,8 +68,3 @@
 # print (get_max (3,12,32,9,21)) 
 # print (get_max ('Arush','Payal','Zalina','Yogesh'))       
 
-N1 = float(input("Number 1:"))
-N2 = float(input("Number 2:"))
-AVG = (N1+N2)/2
-
-print ("AVG:", AVG)

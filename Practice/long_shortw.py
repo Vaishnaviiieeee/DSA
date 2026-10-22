@@ -24,3 +24,18 @@ else:
 
     print("Longest word:", longest)
     print("Shortest word:", shortest)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
