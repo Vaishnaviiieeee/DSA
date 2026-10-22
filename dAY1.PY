@@ -35,17 +35,38 @@
 
 list1 = [1, 4, 2, 8, 5]
 
-list1.append(9)
-print(list1)
+# list1.append(9)
+# print(list1)
 
-list1.sort()
-print(list1)
+# list1.sort()
+# print(list1)
 
-list1.sort(reverse = True)
-print(list1)
+# list1.sort(reverse = True)
+# print(list1)
 
-list1.reverse()
-print(list1)
+# list1.reverse()
+# print(list1)
 
-list1.insert(3,7)
+# list1.insert(3,7)
+# print(list1)
+
+print(list1.append(9))
+list1 = [1, 4, 2, 8, 5]
+
+# list1.append(9)
+# print(list1)
+
+# list1.sort()
+# print(list1)
+
+# list1.sort(reverse = True)
+# print(list1)
+
+# list1.reverse()
+# print(list1)
+
+# list1.insert(3,7)
+# print(list1)
+# print(list.append(9))
+print(list.reverse)
 print(list1)
