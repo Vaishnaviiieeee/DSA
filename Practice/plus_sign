@@ -1,11 +1,22 @@
-print("(a) Plus")
-n = 7
-mid = n // 2
+# print("(a) Plus")
+# n = 7
+# mid = n // 2
 
-for i in range(n):
-    for j in range(n):
-        if i == mid or j == mid:
-            print("*", end=" ")
-        else:
-            print(" ", end=" ")
-    print()
+# for i in range(n):
+#     for j in range(n):
+#         if i == mid or j == mid:
+#             print("*", end=" ")
+#         else:
+#             print(" ", end=" ")
+#     print()
+
+
+list = [1,2,3,2,1]
+
+rev = print(list.reverse())
+print(rev)
+
+if list = rev:
+    print("palindrom")
+else:
+    print("noo")    

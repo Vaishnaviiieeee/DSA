@@ -77,9 +77,14 @@
 # print(list1.pop(3))
 # print(list1)
 
-tup = (1, 5, 2,4, 8, 5)
-print(tup[2:4])
-print(tup.index(4))
+movies = []
+m1=input("Enter movie name:")
+m2=input("Enter movie name:")
+m3=input("Enter movie name:")
+
+movies.append (m1)
+movies.append(m2)
+movies.append(m3)
+print(movies)
 
 
-print(tup.count(4))
