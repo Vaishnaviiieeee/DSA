@@ -24,10 +24,14 @@
 # print("Second Minimum", smin) 
 # print("Second Maximum", smax)
 
-age = int(input("Enter your age:"))
-if(age>=18):
-    print("You can vote") 
-elif(age == 17):
-    print("You can apply for voting card")
+marks = int(input("Enter your marks:"))
+if(marks>=90):
+    print("Grade 'A'") 
+elif(marks >= 80 and marks <90):
+    print("Grade 'B'")
+elif(marks >= 70 and marks <80):
+    print("Grade 'C'")
+elif(marks>=60 and marks <80):
+    print("Grade 'D'")  
 else:
-    print("You are not eligible to vote")    
+    print("fail")      
