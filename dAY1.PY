@@ -24,14 +24,14 @@
 # print("Second Minimum", smin) 
 # print("Second Maximum", smax)
 
-marks = int(input("Enter your marks:"))
-if(marks>=90):
-    print("Grade 'A'") 
-elif(marks >= 80 and marks <90):
-    print("Grade 'B'")
-elif(marks >= 70 and marks <80):
-    print("Grade 'C'")
-elif(marks>=60 and marks <80):
-    print("Grade 'D'")  
+# n = int(input("Enter your number:"))
+# if (n//2):
+#     print("even")    
+# else:
+#     print("odd")    
+
+a = int(input("Enter your number:"))
+if (a%7==0):
+  print("Multiple of 7")
 else:
-    print("fail")      
+  print("jaao yaha se")
