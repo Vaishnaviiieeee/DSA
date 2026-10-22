@@ -25,7 +25,7 @@
 # print("Second Maximum", smax)
 
 str = "Vaishnavi"
-str[4] = "a"
-print(str)
+print(str[2:4])
+
 
     
