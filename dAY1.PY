@@ -34,4 +34,4 @@ a = int(input("Enter your number:"))
 if (a%7==0):
   print("Multiple of 7")
 else:
-  print("jaao yaha se")
+  print("jaao yaha se tumne galat type kra")
