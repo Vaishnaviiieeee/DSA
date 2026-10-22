@@ -24,8 +24,10 @@
 # print("Second Minimum", smin) 
 # print("Second Maximum", smax)
 
-str = "Vaishnavi"
-print(str[2:4])
-
-
+str = "i am Vaishnavi."
+print(str.endswith("vi."))
+print(str.capitalize())
+print(str.replace("Vaishnavi", "Vaishnavi Sonawane"))
+print(str.find("am"))
+print(str.count("Vaishnavi"))
     
