@@ -24,10 +24,28 @@
 # print("Second Minimum", smin) 
 # print("Second Maximum", smax)
 
-marks = [28,94,85,67,50]
-student = ["Kavi", 85,"Pune"]  
-student[0] = "Arjun"
-print(len(marks))
-print(marks[4])
-print(student)
-print(marks[-4:-3])
+# marks = [28,94,85,67,50]
+# len(marks)
+# list.append(9)
+# list.sort()
+# list.sort(reverse=True)
+# list.sort()
+# list.insert(1,45)
+# print(marks)
+
+list1 = [1, 4, 2, 8, 5]
+
+list1.append(9)
+print(list1)
+
+list1.sort()
+print(list1)
+
+list1.sort(reverse = True)
+print(list1)
+
+list1.reverse()
+print(list1)
+
+list1.insert(3,7)
+print(list1)
