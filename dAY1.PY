@@ -24,10 +24,7 @@
 # print("Second Minimum", smin) 
 # print("Second Maximum", smax)
 
-str = "i am Vaishnavi."
-print(str.endswith("vi."))
-print(str.capitalize())
-print(str.replace("Vaishnavi", "Vaishnavi Sonawane"))
-print(str.find("am"))
-print(str.count("Vaishnavi"))
-    
+Name = input("Enter your name:")
+str = (Name)   
+print(len(str)) 
+print(str.count("s"))
