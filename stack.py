@@ -32,8 +32,15 @@ class Stack:
             print(temp.data)
             temp = temp.next
 
+    def reverse(self):
+        temp = self.top
+        while temp:
+            st1.push(Node(temp.data))
+            temp=temp.next        
+
 
 st = Stack()
+st1 = Stack()
 
 st.push(Node(10))
 st.push(Node(20))
@@ -46,3 +53,6 @@ st.print()
 st.pop()
 
 st.print()
+
+st.reverse()
+st1.print()
