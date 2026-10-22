@@ -33,7 +33,7 @@
 # list.insert(1,45)
 # print(marks)
 
-list1 = [1, 4, 2, 8, 5]
+# list1 = [1, 4, 2, 8, 5]
 
 # list1.append(9)
 # print(list1)
@@ -51,7 +51,7 @@ list1 = [1, 4, 2, 8, 5]
 # print(list1)
 
 # print(list1.append(9))
-list1 = [1, 4, 2, 8, 5]
+# list1 = [1, 4, 2, 8, 5]
 
 # list1.append(9)
 # print(list1)
@@ -74,5 +74,12 @@ list1 = [1, 4, 2, 8, 5]
 # print(list1.remove(4))
 # print(list1)
 
-print(list1.pop(3))
-print(list1)
+# print(list1.pop(3))
+# print(list1)
+
+tup = (1, 5, 2,4, 8, 5)
+print(tup[2:4])
+print(tup.index(4))
+
+
+print(tup.count(4))
