@@ -24,8 +24,10 @@
 # print("Second Minimum", smin) 
 # print("Second Maximum", smax)
 
-n = int(input("Enter your number:"))
-if (n//2):
-    print("Barobar aahe ree tu even no. ghetla")    
-else:
-    print("hatt odd ghetlas pagal")    
+marks = [28,94,85,67,50]
+student = ["Kavi", 85,"Pune"]  
+student[0] = "Arjun"
+print(len(marks))
+print(marks[4])
+print(student)
+print(marks[-4:-3])
