@@ -24,7 +24,10 @@
 # print("Second Minimum", smin) 
 # print("Second Maximum", smax)
 
-Name = input("Enter your name:")
-str = (Name)   
-print(len(str)) 
-print(str.count("s"))
+age = int(input("Enter your age:"))
+if(age>=18):
+    print("You can vote") 
+elif(age == 17):
+    print("You can apply for voting card")
+else:
+    print("You are not eligible to vote")    
