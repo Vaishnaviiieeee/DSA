@@ -24,14 +24,8 @@
 # print("Second Minimum", smin) 
 # print("Second Maximum", smax)
 
-# n = int(input("Enter your number:"))
-# if (n//2):
-#     print("even")    
-# else:
-#     print("odd")    
-
-a = int(input("Enter your number:"))
-if (a%7==0):
-  print("Multiple of 7")
+n = int(input("Enter your number:"))
+if (n//2):
+    print("Barobar aahe ree tu even no. ghetla")    
 else:
-  print("jaao yaha se tumne galat type kra")
+    print("hatt odd ghetlas pagal")    
