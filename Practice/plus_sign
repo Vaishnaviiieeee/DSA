@@ -10,13 +10,3 @@
 #             print(" ", end=" ")
 #     print()
 
-
-list = [1,2,3,2,1]
-
-rev = print(list.reverse())
-print(rev)
-
-if list = rev:
-    print("palindrom")
-else:
-    print("noo")    

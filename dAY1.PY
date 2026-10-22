@@ -77,14 +77,35 @@
 # print(list1.pop(3))
 # print(list1)
 
-movies = []
-m1=input("Enter movie name:")
-m2=input("Enter movie name:")
-m3=input("Enter movie name:")
+# movies = []
+# m1=input("Enter movie name:")
+# m2=input("Enter movie name:")
+# m3=input("Enter movie name:")
 
-movies.append (m1)
-movies.append(m2)
-movies.append(m3)
-print(movies)
+# movies.append (m1)
+# movies.append(m2)
+# movies.append(m3)
+# print(movies)
+
+
+# list1 = [1,2,3,2,1]
+# list2 = [1,2,3,2,1]
+
+# copy_list1 =list1.copy
+# copy_list1.revrse()
+
+
+# if (copy_list1 == list1):
+#     print("palindrom")
+# else:
+#     print("noo")    
+
+
+# tup = ("C","D","A","A","B","B","A")
+# print(tup.count("A"))
+
+list = ["C","D","A","A","B","B","A"]
+list.sort()
+print(list)
 
 
