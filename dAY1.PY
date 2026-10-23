@@ -108,4 +108,17 @@
 # list.sort()
 # print(list)
 
+dict = {
+    "Name":"Vaishnavi",
+    "Class":"MCA",
+    "Age":"21"
+}
+print(dict["Name"]) 
+print(dict["Class"]) 
+print(dict["Age"]) 
 
+
+dict["Name"] = "Vaishnavi Sonawane"
+dict["City"] = "Rahata "
+print(dict)
+print(dict["City"])
