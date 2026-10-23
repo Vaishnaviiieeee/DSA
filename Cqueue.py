@@ -20,18 +20,17 @@ class CQueue:
         self.rear.next = self.front                     #added for circular       
 
     def dequeue(self):
-        if self.front:
-          temp=self.front
-          self.front = self.front.next
-          temp = None 
-          if self.front == self.rear:                       #updated for circular
+        if self.front:                   #At least one node in the queue
+            temp=self.front
+            if self.front == self.rear:                       #updated for circular
               self.rear = self.rear = None                          #Updated for circular
               print("Now Queue is empty.")
-              return
-          temp = None
-          self.rear.next = self.front         #Added for circular
+            else:
+              self.front= self.front.next
+              self.rear.next = self.front
+            temp = None 
         else:
-            print("Queue is empty")          
+            print("Queue is empty")            
 
     def print(self):
         temp = self.front
