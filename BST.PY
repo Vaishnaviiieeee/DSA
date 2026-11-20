@@ -17,3 +17,44 @@
 # INORDER: 3,5,8,15,20,24,37,50,58,60,62,91
 # POSTORDER: 3,8,5,24,37,20,15,60,58,91,62,50
 # BST: 50,3,8,5,24,37,20,15,60,58,91,62
+
+
+class Node:
+     def __init__(self,value):
+        self.left = None
+        self.value=value
+        self.right = None
+class BST:
+    def __init__(self):
+        self.root = None
+    def insert(self, new_node):
+        if self.root is None:           # BST is empty
+            self.root = new_node
+        else:
+            temp = self.root
+            while True:
+                if new_node.data < temp.data:
+                    if temp.left is None:
+                        temp.left = new_node
+                        return
+                    temp = temp.left
+                else:
+                    if temp.right is None:
+                        temp.right = new_node
+                        return
+                    temp = temp.right 
+    def inorder(self, rt):
+        if rt is None:
+            return
+        else:
+            self.inorder(rt.left)
+            print(rt.data, end=" ")
+            self.inorder(rt.right)
+b1 = BST()
+b1.insert(Node(100))
+b1.insert(Node(10))
+b1.insert(Node(450))
+b1.insert(Node(0))
+b1.insert(Node(65))
+b1.insert(Node(300))
+b1.inorder(b1.root)
