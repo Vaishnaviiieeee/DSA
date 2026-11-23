@@ -1,0 +1,67 @@
+
+queue = []
+
+# 1. Enqueue
+def enqueue(element):
+    queue.append(element)
+    print(element, "inserted into queue")
+
+# 2. Dequeue
+def dequeue():
+    if len(queue) == 0:
+        print("Queue is empty")
+    else:
+        print("Deleted element:", queue.pop(0))
+
+
+# 3. Display
+def display():
+    if len(queue) == 0:
+        print("Queue is empty")
+    else:
+        print("Queue:", queue)
+
+
+# 4. Reverse Queue using Stack
+def reverse_queue():
+    stack = []
+
+    while queue:
+        stack.append(queue.pop(0))
+
+    while stack:
+        queue.append(stack.pop())
+
+    print("Reversed queue:", queue)
+
+
+# 5. Merge Two Queues
+def merge(q1, q2):
+    result = q1 + q2
+    print("Merged queue:", result)
+
+
+# 6. Check if Two Queues are Identical
+def identical(q1, q2):
+    if q1 == q2:
+        print("Queues are identical")
+    else:
+        print("Queues are not identical")
+
+
+# Function calls
+enqueue(70)
+enqueue(20)
+enqueue(10)
+
+display()
+dequeue()
+display()
+reverse_queue()
+display()
+
+q1 = [70, 20, 10]
+q2 = [30, 60, 90]
+
+merge(q1, q2)
+identical(q1, q2)

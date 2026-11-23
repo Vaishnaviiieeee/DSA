@@ -1,0 +1,4 @@
+# Deleting node:
+# left node : no replacement
+# node -> inorder successor node (left-right child)
+# node -> left child : inorder predecessor node (right-left child)

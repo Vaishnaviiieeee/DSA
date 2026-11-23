@@ -20,13 +20,13 @@
 
 
 class node:
-    def _init_(self,value):
+    def __init__(self, value):
         self.left=None
         self.data=value
         self.right=None
 
 class BST:
-    def _init_(self):
+    def __init__(self):
         self.root=None
 
     def insert(self, new_node):
@@ -64,3 +64,22 @@ b1.insert(node(0))
 b1.insert(node(65))             
 b1.insert(node(300))
 b1.inorder(b1.root)
+
+# FIND MIN AND MAX IN BST
+def find_min(self, rt):
+    if rt is None:
+        return None
+    while rt.left is not None:
+        rt = rt.left
+    return rt.data
+
+def find_max(self, rt):
+    if rt is None:
+        return None
+    while rt.right is not None:
+        rt = rt.right
+    return rt.data
+print("\nMinimum value in BST:", find_min(b1, b1.root))
+print("Maximum value in BST:", find_max(b1, b1.root))
+
+# preorder:
