@@ -83,21 +83,33 @@ print("\nMinimum value in BST:", find_min(b1, b1.root))
 print("Maximum value in BST:", find_max(b1, b1.root))
 
 # preorder:
-def preorder(self, rt):
-    if rt is None:
-        return
-    print(rt.data, end=" ")
-    self.preorder(rt.left)
-    self.preorder(rt.right)
-print("\nPreorder traversal of BST:", end =" ")  
-b1.preorder(b1.root)
+# def preorder(self, rt):
+#     if rt is None:
+#         return
+#     print(rt.data, end=" ")
+#     self.preorder(rt.left)
+#     self.preorder(rt.right)
+# print("\nPreorder traversal of BST:", end =" ")  
+# b1.preorder(b1.root)
 
 def del_node(self, rt, value):
     if rt is None:
-        return 
+        return rt
     if value < rt.data:
         rt.left = self.del_node(rt.left, value)
     elif value > rt.data:
         rt.right = self.del_node(rt.right, value)
+    else:
+            if rt.left is None:
+                return rt.right
+            elif rt.right is None:
+                return rt.left
+            # temp = self.find_min(rt.right)                  
+            # rt.data = temp
+            # rt.right = self.del_node(rt.right, temp)
+            # When node has both left and right child.
+            succ =self.get_successor(rt) 
+            rt.data = succ.data
+            rt.right = self.del_node(rt.right, succ.data)   
    
     return rt
