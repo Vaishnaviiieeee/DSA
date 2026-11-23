@@ -112,5 +112,8 @@ def del_node(self, rt, value):
             rt.data = succ.data
             rt.right = self.del_node(rt.right, succ.data)
             return rt   
-   
-    return rt
+def get_successor(self, temp):
+    temp = temp.right
+    while temp.left is not None and temp.left.data is not None:
+        temp = temp.left
+    return temp
