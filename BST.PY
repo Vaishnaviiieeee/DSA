@@ -110,6 +110,7 @@ def del_node(self, rt, value):
             # When node has both left and right child.
             succ =self.get_successor(rt) 
             rt.data = succ.data
-            rt.right = self.del_node(rt.right, succ.data)   
+            rt.right = self.del_node(rt.right, succ.data)
+            return rt   
    
     return rt
