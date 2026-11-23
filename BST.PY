@@ -48,7 +48,7 @@ class BST:
                     else:
                         temp=temp.right
 
-    def inorder(self,rt):
+    def inorder(self,rt):                     #Inorder traversal of BST
         if rt is None:
             return
         else:
@@ -56,24 +56,26 @@ class BST:
             print(rt.data,end=" ")
             self.inorder(rt.right)
 
-b1=BST()
+b1=BST() 
 b1.insert(node(100))
 b1.insert(node(10))
 b1.insert(node(450))
+b1.insert(node(4))
 b1.insert(node(0))
 b1.insert(node(65))             
 b1.insert(node(300))
+b1.insert(node(500))
 b1.inorder(b1.root)
 
 # FIND MIN AND MAX IN BST
-def find_min(self, rt):
+def find_min(self, rt):                                    #MIN
     if rt is None:
         return None
     while rt.left is not None:
         rt = rt.left
     return rt.data
 
-def find_max(self, rt):
+def find_max(self, rt):                                #MAX
     if rt is None:
         return None
     while rt.right is not None:
@@ -112,8 +114,12 @@ def del_node(self, rt, value):
             rt.data = succ.data
             rt.right = self.del_node(rt.right, succ.data)
             return rt   
-def get_successor(self, temp):
+def get_successor(self, temp):             #Next node
     temp = temp.right
     while temp.left is not None and temp.left.data is not None:
         temp = temp.left
     return temp
+b1.delete_node = del_node
+print("\n Deleting node from BST:")
+b1.delete_node(b1.root, 4)
+b1.inorder(b1.root)
