@@ -123,3 +123,6 @@ b1.delete_node = del_node
 print("\n Deleting node from BST:")
 b1.delete_node(b1.root, 4)
 b1.inorder(b1.root)
+
+# counting leaf node, counting non-leaf node, counting total node
+#  Stack, queue, linked list
