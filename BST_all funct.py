@@ -133,6 +133,17 @@ class BST:
 
         return temp
 
+    def search(self, key):
+        temp = self.root
+        while temp:
+            if temp.data == key:
+                return True
+            elif key < temp.data:
+                temp = temp.left
+            else:
+                temp = temp.right
+        return False
+
 
 # CREATE BST
 
@@ -194,6 +205,10 @@ b1.root = b1.del_node(b1.root, 4)
 
 b1.inorder(b1.root)
 
+if b1.search(65):
+    print("\nFound the node")
+else:
+    print("\nNode not found)")
 
 # COUNTING LEAF NODE
 # COUNTING NON-LEAF NODE
