@@ -53,6 +53,7 @@ class node:
 class BST:
     def __init__(self):
         self.root = None
+        self.cnt = 0
 
     # INSERT NODE
 
@@ -84,6 +85,8 @@ class BST:
             return
         else:
             self.inorder(rt.left)
+            if rt.left is None and rt.right is None:
+                self.cnt +=1
             print(rt.data, end=" ")
             self.inorder(rt.right)
 
@@ -96,6 +99,16 @@ class BST:
         print(rt.data, end=" ")
         self.preorder(rt.left)
         self.preorder(rt.right)
+
+    def count_leaf(self, rt): 
+        if rt is None:
+            return
+        else:
+            self.count_leaf(rt.left)
+            if rt.left is None and rt.right is None:
+                self.cnt +=1
+            self.count_leaf(rt.right)
+
 
     # DELETE NODE FROM BST
 
@@ -133,6 +146,7 @@ class BST:
 
         return temp
 
+# Searching a node in BST
     def search(self, key):
         temp = self.root
         while temp:
@@ -196,7 +210,6 @@ print("Maximum value in BST:", find_max(b1, b1.root))
 print("\nPreorder traversal of BST:", end=" ")
 b1.preorder(b1.root)
 
-
 # DELETING NODE FROM BST
 
 print("\nDeleting node from BST:")
@@ -209,6 +222,11 @@ if b1.search(65):
     print("\nFound the node")
 else:
     print("\nNode not found)")
+
+print("\nTotal leaf nodes in BST:", b1.cnt)
+
+b1.count_leaf(b1.root)
+print("\nTotal leaf nodes in BST:", b1.cnt)
 
 # COUNTING LEAF NODE
 # COUNTING NON-LEAF NODE
