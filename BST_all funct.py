@@ -100,12 +100,12 @@ class BST:
         self.preorder(rt.left)
         self.preorder(rt.right)
 
-    def count_leaf(self, rt): 
+    def count_nleaf(self, rt): 
         if rt is None:
             return
         else:
-            self.count_leaf(rt.left)
-            if rt.left is None and rt.right is None:
+            self.count_nleaf(rt.left)
+            if rt.left is not None or rt.right is not None:
                 self.cnt +=1
             self.count_leaf(rt.right)
 
@@ -225,8 +225,8 @@ else:
 
 print("\nTotal leaf nodes in BST:", b1.cnt)
 
-b1.count_leaf(b1.root)
-print("\nTotal leaf nodes in BST:", b1.cnt)
+b1.count_nleaf(b1.root)
+print("\nTotal non-leaf nodes in BST:", b1.cnt)
 
 # COUNTING LEAF NODE
 # COUNTING NON-LEAF NODE
